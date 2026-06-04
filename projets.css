@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'WorldCup';
+    src: url('fonts/fff_world_cup_2018_adidas.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'medium500';
+    src: url(fonts/Tomorrow/Tomorrow-Medium.ttf);
+}
+
+body{
+    
+    background-color: rgb(61, 3, 30);
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'WorldCup';
+}
+section:first-of-type > div{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+section:first-of-type > div > img{
+    width: 80px;
+    border-radius: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: rgba(255, 0, 255, 0.404);
+    font-size: 25px;
+    
+}
+
+header > .presentation:hover > a{
+    color: rgb(255, 0, 170);
+    box-shadow: 0px 0px 35px rgb(255, 0, 255);
+    position: relative;
+    bottom: 5px;
+}
+
+header > .contact:hover > a{
+    color: rgb(255, 0, 170);
+    box-shadow: 0px 0px 35px rgb(255, 0, 255);
+    position: relative;
+    bottom: 5px;
+}
+
+
+header>div>a{
+    margin-left: 25px;
+    margin-right: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    box-shadow: 10px 10px 0px rgb(255, 0, 170);
+    padding-right: 5px;
+    margin-bottom: 70px;
+    font-family: medium500;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: medium500;
+    
+}
+
+
+section:not(:first-child){
+    
+    padding: 10px;
+    width: 80%;
+    font-family: medium500;
+    background-color: rgba(255, 0, 255, 0.404);
+    border: solid;
+    border-color: rgb(334, 33, 96);
+    justify-self: center;
+    
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background-color 0.35s ease;
+    padding: 30px;
+    margin-bottom: 40px;
+
+    
+}
+
+
+
+section:not(:first-child):hover{
+    background-color: rgb(334, 33, 96);
+    box-shadow: 0px 0px 35px rgb(255, 0, 255);
+    transform: translateY(-15px);
+}
+
+header > div{
+    padding: 10px;
+    padding: 10px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+main > section:first-child{
+    grid-column: 1 / -1;
+}
+
+section:not(:first-child) img {
+    width: 650px;
+}
+
+main  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    row-gap: 30px;
+    list-style: none;
+    
+}
+
+main ul > li {
+    position: relative;
+    padding-left: 20px;
+}
+
+main ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 8px;
+    height: 8px;
+    background: rgb(255, 0, 170);
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px rgb(255, 0, 170);
+}
+
+section:hover li::before {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+header > .projet > a{
+    box-shadow: 0px 10px 0px rgb(255, 0, 170);
+}
+
+header > .projet:hover > a{
+    position: relative;
+    bottom: 5px;
+    color:rgb(255, 0, 170);
+}
+
+p{
+    line-height: 150%;
+}
