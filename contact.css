@@ -28,6 +28,7 @@ section:first-of-type > div{
 section:first-of-type > div > img{
     width: 80px;
     border-radius: 10px;
+    height: 114px;
 }
 
 header{
